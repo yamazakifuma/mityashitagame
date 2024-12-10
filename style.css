@@ -1,0 +1,51 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  width: 300px;
+  height: 300px;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  font-size: 24px; /* フォントサイズを調整 */
+  line-height: 1; /* 行間を調整 */ /* 必要に応じて調整 */
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+}
+
+.message {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#resetButton {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.x {
+  color: blue;
+}
+
+.o {
+  color: red;
+}
+
+.faded {
+  opacity: 0.5;
+}
